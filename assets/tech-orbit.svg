@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 960 350" width="100%" height="auto" role="img" aria-label="Kais Aljammal — Technology &amp; Systems Ecosystem">
+  <title>Kais Aljammal — Technology &amp; Systems Ecosystem</title>
+  <desc>Orbital architectural map of core technologies, AI frameworks, infrastructure, and agentic workflows.</desc>
+
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="to-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#02050f"/>
+      <stop offset="50%" stop-color="#050a1b"/>
+      <stop offset="100%" stop-color="#02040c"/>
+    </linearGradient>
+
+    <!-- Core Center Halo -->
+    <radialGradient id="to-core-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#818cf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Orbit Tracks for animateMotion -->
+    <path id="orbit-inner-path" d="M 240 175 A 240 80 0 1 0 720 175 A 240 80 0 1 0 240 175"/>
+    <path id="orbit-outer-path" d="M 90 175 A 390 135 0 1 0 870 175 A 390 135 0 1 0 90 175"/>
+
+    <!-- Glow Filter -->
+    <filter id="to-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      animate, animateMotion {
+        animation-play-state: paused !important;
+        repeatCount: 1 !important;
+        dur: 0.001s !important;
+      }
+    }
+  </style>
+
+  <!-- Canvas -->
+  <rect width="960" height="350" fill="url(#to-bg)"/>
+
+  <!-- Subtle Coordinate Ticks -->
+  <g stroke="#0f1f3d" stroke-width="0.5" stroke-dasharray="2,3" opacity="0.6">
+    <line x1="480" y1="20" x2="480" y2="330"/>
+    <line x1="40" y1="175" x2="920" y2="175"/>
+  </g>
+
+  <!-- Outer Orbit Track -->
+  <ellipse cx="480" cy="175" rx="390" ry="135" fill="none" stroke="#162c52" stroke-width="1" stroke-dasharray="5,6" opacity="0.75"/>
+
+  <!-- Inner Orbit Track -->
+  <ellipse cx="480" cy="175" rx="240" ry="80" fill="none" stroke="#1e3a66" stroke-width="1.2" stroke-dasharray="3,4" opacity="0.85"/>
+
+  <!-- Traveling Orbit Signal Pulses -->
+  <g filter="url(#to-glow)">
+    <!-- Inner Orbit Signal 1 (Cyan) -->
+    <circle r="3.5" fill="#38bdf8">
+      <animateMotion dur="9s" repeatCount="indefinite"><mpath href="#orbit-inner-path"/></animateMotion>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Inner Orbit Signal 2 (Violet, Offset) -->
+    <circle r="3" fill="#c084fc">
+      <animateMotion dur="9s" repeatCount="indefinite" begin="4.5s"><mpath href="#orbit-inner-path"/></animateMotion>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="9s" repeatCount="indefinite" begin="4.5s"/>
+    </circle>
+    <!-- Outer Orbit Signal 1 (Gold) -->
+    <circle r="3.5" fill="#fef08a">
+      <animateMotion dur="16s" repeatCount="indefinite"><mpath href="#orbit-outer-path"/></animateMotion>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Outer Orbit Signal 2 (Cyan, Offset) -->
+    <circle r="3" fill="#38bdf8">
+      <animateMotion dur="16s" repeatCount="indefinite" begin="8s"><mpath href="#orbit-outer-path"/></animateMotion>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="16s" repeatCount="indefinite" begin="8s"/>
+    </circle>
+  </g>
+
+  <!-- Central AI Core & Agentic Hub -->
+  <g>
+    <!-- Pulsing Aura -->
+    <circle cx="480" cy="175" r="54" fill="url(#to-core-glow)">
+      <animate attributeName="r" values="46;62;46" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Outer Border Hex/Circle -->
+    <circle cx="480" cy="175" r="44" fill="#07132e" stroke="#38bdf8" stroke-width="1.4"/>
+    <circle cx="480" cy="175" r="38" fill="#040b1e" stroke="#6366f1" stroke-width="0.8" stroke-dasharray="3,3"/>
+    
+    <!-- Central Icon / Symbol -->
+    <circle cx="480" cy="162" r="5" fill="#fef08a"/>
+    <circle cx="470" cy="178" r="3.5" fill="#38bdf8"/>
+    <circle cx="490" cy="178" r="3.5" fill="#a855f7"/>
+    <line x1="480" y1="162" x2="470" y2="178" stroke="#38bdf8" stroke-width="0.8"/>
+    <line x1="480" y1="162" x2="490" y2="178" stroke="#a855f7" stroke-width="0.8"/>
+    <line x1="470" y1="178" x2="490" y2="178" stroke="#94a3b8" stroke-width="0.8"/>
+
+    <!-- Center Label -->
+    <text x="480" y="200" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700" letter-spacing="1.5" fill="#f8fafc" text-anchor="middle">AI CORE</text>
+    <text x="480" y="210" font-family="'JetBrains Mono', monospace" font-size="6.5" letter-spacing="1" fill="#7dd3fc" text-anchor="middle">AGENTIC RUNTIME</text>
+  </g>
+
+  <!-- INNER ORBIT TECH NODES (Primary Languages & Runtimes) -->
+  <!-- Inner 1: TypeScript (West) -->
+  <g transform="translate(240, 175)">
+    <rect x="-56" y="-14" width="112" height="28" rx="14" fill="#081430" stroke="#38bdf8" stroke-width="1.1"/>
+    <circle cx="-40" cy="0" r="3.5" fill="#38bdf8"/>
+    <text x="-28" y="4" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#f1f5f9">TypeScript</text>
+  </g>
+
+  <!-- Inner 2: Python (North) -->
+  <g transform="translate(480, 95)">
+    <rect x="-48" y="-14" width="96" height="28" rx="14" fill="#081430" stroke="#38bdf8" stroke-width="1.1"/>
+    <circle cx="-34" cy="0" r="3.5" fill="#fde047"/>
+    <text x="-22" y="4" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#f1f5f9">Python</text>
+  </g>
+
+  <!-- Inner 3: Next.js 16 (East) -->
+  <g transform="translate(720, 175)">
+    <rect x="-56" y="-14" width="112" height="28" rx="14" fill="#081430" stroke="#38bdf8" stroke-width="1.1"/>
+    <circle cx="-40" cy="0" r="3.5" fill="#f8fafc"/>
+    <text x="-28" y="4" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#f1f5f9">Next.js 16</text>
+  </g>
+
+  <!-- Inner 4: React 19 (South) -->
+  <g transform="translate(480, 255)">
+    <rect x="-50" y="-14" width="100" height="28" rx="14" fill="#081430" stroke="#38bdf8" stroke-width="1.1"/>
+    <circle cx="-35" cy="0" r="3.5" fill="#61dafb"/>
+    <text x="-23" y="4" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#f1f5f9">React 19</text>
+  </g>
+
+  <!-- OUTER ORBIT TECH NODES (AI Systems, Infrastructure, Tooling) -->
+  <!-- Outer 1: Voice AI / STT-TTS (North-West) -->
+  <g transform="translate(150, 95)">
+    <rect x="-65" y="-13" width="130" height="26" rx="13" fill="#060f26" stroke="#1e3a66" stroke-width="0.9"/>
+    <circle cx="-50" cy="0" r="3.5" fill="#38bdf8"/>
+    <text x="-38" y="4" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#93c5fd">Voice AI (STT/TTS)</text>
+  </g>
+
+  <!-- Outer 2: Multi-Agent Systems (North) -->
+  <g transform="translate(300, 48)">
+    <rect x="-65" y="-13" width="130" height="26" rx="13" fill="#060f26" stroke="#818cf8" stroke-width="0.9"/>
+    <circle cx="-50" cy="0" r="3.5" fill="#c084fc"/>
+    <text x="-38" y="4" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#e9d5ff">Multi-Agent Pipelines</text>
+  </g>
+
+  <!-- Outer 3: MCP & Token Cache (North-East) -->
+  <g transform="translate(660, 48)">
+    <rect x="-65" y="-13" width="130" height="26" rx="13" fill="#060f26" stroke="#38bdf8" stroke-width="0.9"/>
+    <circle cx="-50" cy="0" r="3.5" fill="#7dd3fc"/>
+    <text x="-38" y="4" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#bae6fd">MCP / TokensCache</text>
+  </g>
+
+  <!-- Outer 4: OpenAI & Frontier LLMs (East) -->
+  <g transform="translate(835, 100)">
+    <rect x="-62" y="-13" width="124" height="26" rx="13" fill="#060f26" stroke="#34d399" stroke-width="0.9"/>
+    <circle cx="-48" cy="0" r="3.5" fill="#34d399"/>
+    <text x="-36" y="4" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#a7f3d0">OpenAI &amp; LLMs</text>
+  </g>
+
+  <!-- Outer 5: Supabase & PostgreSQL (South-East) -->
+  <g transform="translate(820, 245)">
+    <rect x="-65" y="-13" width="130" height="26" rx="13" fill="#060f26" stroke="#34d399" stroke-width="0.9"/>
+    <circle cx="-50" cy="0" r="3.5" fill="#34d399"/>
+    <text x="-38" y="4" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#a7f3d0">Supabase / Postgres</text>
+  </g>
+
+  <!-- Outer 6: Vitest & Playwright (South) -->
+  <g transform="translate(640, 302)">
+    <rect x="-62" y="-13" width="124" height="26" rx="13" fill="#060f26" stroke="#1e3a66" stroke-width="0.9"/>
+    <circle cx="-48" cy="0" r="3.5" fill="#fde047"/>
+    <text x="-36" y="4" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#fef08a">Vitest &amp; Playwright</text>
+  </g>
+
+  <!-- Outer 7: Docker & Vercel (South) -->
+  <g transform="translate(320, 302)">
+    <rect x="-56" y="-13" width="112" height="26" rx="13" fill="#060f26" stroke="#1e3a66" stroke-width="0.9"/>
+    <circle cx="-42" cy="0" r="3.5" fill="#38bdf8"/>
+    <text x="-30" y="4" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#93c5fd">Docker &amp; Vercel</text>
+  </g>
+
+  <!-- Outer 8: pgvector & Dexie PWA (South-West) -->
+  <g transform="translate(130, 245)">
+    <rect x="-65" y="-13" width="130" height="26" rx="13" fill="#060f26" stroke="#1e3a66" stroke-width="0.9"/>
+    <circle cx="-50" cy="0" r="3.5" fill="#a78bfa"/>
+    <text x="-38" y="4" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#c4b5fd">pgvector &amp; Dexie</text>
+  </g>
+
+  <!-- Top / Bottom Sub-caption -->
+  <text x="480" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" letter-spacing="3" fill="#64748b" text-anchor="middle">SYSTEM TECH STACK · VERIFIED PRODUCTION DEPENDENCIES</text>
+</svg>
