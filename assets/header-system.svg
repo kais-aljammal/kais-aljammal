@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 64" width="100%" height="auto" role="img" aria-label="Section: 03 // Builder System">
+  <defs>
+    <linearGradient id="line-grad-3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#c084fc" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
+    .heading { font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; font-weight: 800; }
+  </style>
+
+  <!-- Left Accent Bracket -->
+  <rect x="0" y="8" width="4" height="48" rx="2" fill="#38bdf8"/>
+  <rect x="8" y="16" width="2" height="32" rx="1" fill="#c084fc" opacity="0.6"/>
+
+  <!-- Index & Title Group -->
+  <g transform="translate(24, 0)">
+    <text x="0" y="22" class="mono" font-size="9" letter-spacing="2.5" fill="#38bdf8" font-weight="700">// 03 · SYSTEMS &amp; FRAMEWORKS</text>
+    <text x="0" y="46" class="heading" font-size="22" letter-spacing="1.5" fill="#f8fafc">BUILDER SYSTEM</text>
+    
+    <line x1="240" y1="38" x2="880" y2="38" stroke="url(#line-grad-3)" stroke-width="1.2"/>
+    <circle cx="240" cy="38" r="2.5" fill="#38bdf8"/>
+  </g>
+
+  <!-- Right Status Badge -->
+  <g transform="translate(895, 27)">
+    <rect x="0" y="0" width="95" height="22" rx="11" fill="#0b1736" stroke="#1e3a66" stroke-width="1"/>
+    <circle cx="12" cy="11" r="3" fill="#38bdf8"/>
+    <text x="22" y="14" class="mono" font-size="8.5" letter-spacing="1.5" fill="#38bdf8" font-weight="600">PRODUCTION</text>
+  </g>
+</svg>
