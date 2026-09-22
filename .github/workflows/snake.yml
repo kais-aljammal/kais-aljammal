@@ -29,5 +29,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dist/github-snake-dark.svg
           if git commit -m "chore(snake): update contribution snake [skip ci]"; then
+            git pull --rebase origin main
             git push
           fi
