@@ -4,32 +4,34 @@
 
 <table border="0" width="100%">
   <tr>
-    <td valign="top" width="62%">
+    <td valign="top" width="64%">
 
-### what
+<h3>about</h3>
 
-I’m **Kais Aljammal**, a Computer Engineering student in Istanbul building AI products, developer tools, and practical web software.
+<p>
+I’m <strong>Kais Aljammal</strong>, a Computer Engineering student at Istanbul Medipol University building practical AI products and developer tools.
+</p>
 
-I’m especially interested in real-time AI experiences, agent reliability, semantic caching, and products that turn complex systems into simple interfaces.
+<p>
+Most of my work sits where AI meets product engineering: voice interfaces, agent reliability, caching, and tools designed to make complicated systems feel simple to use.
+</p>
 
-### now
+<h3>now</h3>
 
-Co-founder of**[Interviewlary](https://interviewlary.com)** while experimenting with AI infrastructure, autonomous-agent reliability, and learning tools.
+<p>
+Co-founder of <strong><a href="https://interviewlary.com">Interviewlary</a></strong>, an AI interview-practice platform built around role-specific simulation, voice/text answers, and actionable feedback.
+</p>
 
-### working set
+<h3>stack</h3>
 
-`TypeScript` · `Python` · `Next.js` · `React` · `Supabase` · `PostgreSQL` · `MCP`
+<p>
+<code>TypeScript</code> · <code>Python</code> · <code>Next.js</code> · <code>React</code> · <code>Supabase</code> · <code>PostgreSQL</code> · <code>MCP</code>
+</p>
 
     </td>
-    <td valign="top" width="38%" align="right">
+    <td valign="top" width="36%" align="right">
 
-<p><strong>SELECTED</strong><br>
-<code>01</code> &nbsp; <a href="https://interviewlary.com">Interviewlary</a><br>
-<code>02</code> &nbsp; <a href="https://github.com/kais-aljammal/tokenscache">TokensCache</a><br>
-<code>03</code> &nbsp; <a href="https://github.com/kais-aljammal/truthnet">TruthNet</a><br>
-<code>04</code> &nbsp; <a href="https://github.com/kais-aljammal/reliability-guard">Reliability Guard</a></p>
-
-<p><strong>FIND</strong><br>
+<p><strong>FIND</strong><br><br>
 <a href="https://kais.live">kais.live</a><br>
 <a href="https://kais.live/cv.html">CV / Resume</a><br>
 <a href="https://www.linkedin.com/in/kaisaljammal/">LinkedIn</a><br>
@@ -44,16 +46,16 @@ Co-founder of**[Interviewlary](https://interviewlary.com)** while experimenting 
 ### selected work
 
 **01 / [Interviewlary](https://interviewlary.com)**  
-AI interview practice built around role-specific preparation, voice/text interaction, and actionable feedback.
+Role-specific AI mock interviews with voice/text practice and structured feedback designed to make interview preparation more active and useful.
 
 **02 / [TokensCache](https://github.com/kais-aljammal/tokenscache)**  
-Semantic caching middleware for AI workflows, built to reduce repeated model work and unnecessary token usage.
+An intelligent cache layer for multi-provider AI agents with exact + semantic reuse, prompt optimization, and budget controls.
 
 **03 / [TruthNet](https://github.com/kais-aljammal/truthnet)**  
-A multi-agent fact-checking experiment built around adversarial review and competing model perspectives.
+An adversarial 4-agent fact-checking pipeline that gathers evidence, argues both sides, and returns a sourced verdict.
 
 **04 / [Reliability Guard](https://github.com/kais-aljammal/reliability-guard)**  
-A reliability and evaluation layer for agentic systems, focused on catching incorrect actions before they propagate.
+A two-layer reliability framework for AI agents focused on reducing fabrication, false certainty, and unverified behavior.
 
 ---
 
