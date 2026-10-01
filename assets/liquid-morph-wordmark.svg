@@ -57,7 +57,7 @@
 
   <line x1="60" y1="360" x2="1140" y2="360" stroke="#0a0a0a" stroke-width="0.5"/>
   <g font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="3" fill="#0a0a0a">
-    <text x="60" y="382">AI SYSTEMS  /  PRODUCTS  /  WEB  /  EXPERIMENTS</text>
+    <text x="60" y="382">AI PRODUCTS  /  DEV TOOLS  /  WEB  /  EXPERIMENTS</text>
     <text x="1140" y="382" text-anchor="end" fill="#d62828">KAIS.LIVE  ></text>
   </g>
 
