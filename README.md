@@ -14,7 +14,7 @@ I’m especially interested in real-time AI experiences, agent reliability, sema
 
 ### now
 
-Co-building **[Interviewlary](https://interviewlary.com)** while experimenting with AI infrastructure, autonomous-agent reliability, and learning tools.
+Co-founder of**[Interviewlary](https://interviewlary.com)** while experimenting with AI infrastructure, autonomous-agent reliability, and learning tools.
 
 ### working set
 
